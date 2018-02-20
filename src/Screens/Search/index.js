@@ -7,7 +7,7 @@ import {getSearchNews} from '../../API'
 class Search extends Component{
     state= {
         data: [],
-        text: null
+        text: " "
     }
 
     handleSubmit= () => {

@@ -22,6 +22,8 @@ export const getCbcNews = () => {
 }
 
 export const getSearchNews = (params) => {
+  // To String??
+    params = params.toString();
     return axios({
         method: "GET",
         url: `https://newsapi.org/v2/everything?q=${params}&from=2018-02-15&to=2018-02-15&sortBy=popularity&apiKey=cc1ea0b08c4e4887af35e9fce8d5d88d`
